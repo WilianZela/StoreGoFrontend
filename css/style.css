@@ -50,6 +50,7 @@ body {
 	justify-content: center;
 	background-color: chocolate;
 	border-radius: 0px 0px 15px 15px;
+	box-shadow: rgba(0, 0, 0, 1) 0px 3px 8px;
 }
 a {
 	text-decoration: none;
