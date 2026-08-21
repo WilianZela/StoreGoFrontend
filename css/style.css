@@ -49,6 +49,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	background-color: chocolate;
+	border-radius: 0px 0px 15px 15px;
 }
 a {
 	text-decoration: none;
@@ -83,7 +84,7 @@ a:hover {
 	background-color: #eb2525;
 }
 .articulo {
-	background-color: #2563EB;
+	background-color: #2563eb91;
 	min-height: 100vh;
 	margin: 10px;
 	padding-top: 5px;
