@@ -9,8 +9,6 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
-	float: right;
 }
 
 .card {
@@ -86,16 +84,9 @@ a:hover {
 }
 .articulo {
 	background-color: #2563EB;
-	min-height: 150vh;
+	min-height: 100vh;
 	margin: 10px;
 	padding-top: 5px;
 	border-radius: 15px;
 	box-shadow: rgba(0, 0, 0, 1) 0px 3px 8px;
-}
-.header {
-	min-height: 50vh;
-	margin: 10px;
-	border-radius: 15px;
-	background-color: #555;
-	
 }
