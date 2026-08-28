@@ -90,3 +90,9 @@ a:hover {
 	border-radius: 15px;
 	box-shadow: rgba(0, 0, 0, 1) 0px 3px 8px;
 }
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
