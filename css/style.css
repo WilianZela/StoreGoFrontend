@@ -63,10 +63,11 @@ a:hover {
 .menu {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	min-height: 64px;
 	min-width: 100vh;
+	gap: 40px;
 }
 .elemento {
 	display: flex;
@@ -95,4 +96,36 @@ a:hover {
 	bottom: 0;
 	left: 0;
 	width: 100%;
+	padding: 10px 20px;               
+  	background-color: #d35400;
+  	background-image: url("img/logo_tienda.png"); 
+  	background-repeat: repeat-x;      
+  	background-size: 60px auto;       
+  	background-position: center top;  
+  	text-align: center;
+}
+.footer-content{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 25px;
+}
+.footer-img {
+  max-width: 30px;        
+  height: auto;       
+  display: block;     
+  margin-right: 15px; 
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+.footer-menu{
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-around;
+	align-items: center;
+}
+.footer-elemento{
+	color: white;
+	text-decoration: dotted;
+	font-weight: lighter;
 }
