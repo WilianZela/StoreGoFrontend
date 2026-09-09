@@ -130,6 +130,27 @@ a:hover {
 	width: 200px;
 	height: 200px;
 }
+footer.pie {
+	height: 200px;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	display: flex;
+	flex-direction: center;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+}
+article.portada {
+	width: 90%;
+	height: 500px;
+	margin: 20px;
+	padding: 20px;
+	background-color: #F0E2CC;
+	border: 1px solid #E2E8F0;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 8px;
+}
 //max width 576
 //min width 577 max width 768
 //min width 769 max width 992
