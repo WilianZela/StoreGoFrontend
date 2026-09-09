@@ -103,13 +103,13 @@ a:hover {
 	}
 	
 }
-@media (min-width: 577px max-width: 768px){
+@media (min-width: 577px) and (max-width: 768px){
 	.elemento {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
 }
-@media (min-width: 769px max-width: 992px){
+@media (min-width: 769px) and ( max-width: 992px){
 	.elemento {
 		padding-left: 10px;
 		padding-right: 10px;
@@ -130,17 +130,45 @@ a:hover {
 	width: 200px;
 	height: 200px;
 }
-footer.pie {
-	height: 200px;
-	background-color: black;
-	color: white;
-	font-weight: bold;
-	display: flex;
-	flex-direction: center;
-	justify-content: center;
-	align-items: center;
-	font-size: 25px;
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px 20px;               
+  	background-color: #d35400;
+  	background-image: url("img/logo_tienda.png"); 
+  	background-repeat: repeat-x;      
+  	background-size: 60px auto;       
+  	background-position: center top;  
+  	text-align: center;
 }
+.footer-content{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 25px;
+}
+.footer-img {
+  max-width: 30px;        
+  height: auto;       
+  display: block;     
+  margin-right: 18px; 
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+.footer-menu{
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-around;
+	align-items: center;
+}
+.footer-elemento{
+	color: white;
+	text-decoration: dotted;
+	font-weight: lighter;
+}
+
 article.portada {
 	width: 90%;
 	height: 500px;
@@ -151,7 +179,7 @@ article.portada {
 	border-radius: 5px;
 	box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 8px;
 }
-//max width 576
+/*//max width 576
 //min width 577 max width 768
 //min width 769 max width 992
-//min width 993
+//min width 993*/
