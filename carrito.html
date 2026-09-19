@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>StoreGo | Carrito</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+        <span>STORE</span>GO
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            Inicio
+        </a>
+
+        <a href="productos.html">
+            Productos
+        </a>
+
+        <a href="carrito.html" class="active">
+            🛒 Carrito
+            <span id="contador-carrito">0</span>
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+<section class="carrito">
+
+    <div class="carrito-header">
+
+        <p class="hero-small">
+            STOREGO MARKET
+        </p>
+
+        <h1>
+            Tu carrito
+        </h1>
+
+    </div>
+
+
+    <div class="carrito-layout">
+
+        <div
+            id="items-carrito"
+            class="items-carrito">
+
+            <!-- JavaScript -->
+
+        </div>
+
+
+        <aside class="resumen">
+
+            <h2>
+                Resumen
+            </h2>
+
+            <div class="resumen-linea">
+
+                <span>
+                    Productos
+                </span>
+
+                <span id="subtotal">
+                    $0
+                </span>
+
+            </div>
+
+
+            <div class="resumen-linea">
+
+                <span>
+                    Envío
+                </span>
+
+                <span>
+                    GRATIS
+                </span>
+
+            </div>
+
+
+            <hr>
+
+
+            <div class="total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="total">
+                    $0
+                </strong>
+
+            </div>
+
+
+            <button
+                class="btn btn-comprar"
+                onclick="finalizarCompra()">
+
+                FINALIZAR COMPRA
+
+            </button>
+
+        </aside>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <div class="logo">
+        <span>STORE</span>GO
+    </div>
+
+    <p>
+        © 2026 StoreGo. Proyecto educativo.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
