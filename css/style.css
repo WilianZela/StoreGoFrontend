@@ -73,6 +73,7 @@ a:hover {
 	transition: all 1s ease;
 	padding-left: 10px;
 	padding-right: 10px;
+	flex-grow: 1;
 }
 .elemento:hover {
 	transition: all 1s ease;
@@ -143,32 +144,13 @@ a:hover {
   	background-position: center top;  
   	text-align: center;
 }
-.footer-content{
+.carrito {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	gap: 25px;
-}
-.footer-img {
-  max-width: 30px;        
-  height: auto;       
-  display: block;     
-  margin-right: 18px; 
-  margin-bottom: 0;
-  flex-shrink: 0;
-}
-.footer-menu{
-	display: flex;
+	flex-direction: row;
 	flex-grow: 1;
-	justify-content: space-around;
-	align-items: center;
+	justify-content: center;
 }
-.footer-elemento{
-	color: white;
-	text-decoration: dotted;
-	font-weight: lighter;
-}
-
 article.portada {
 	width: 90%;
 	height: 500px;
@@ -178,6 +160,17 @@ article.portada {
 	border: 1px solid #E2E8F0;
 	border-radius: 5px;
 	box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 8px;
+}
+.pie {
+	background-color: black;
+	color: white;
+	font-size: 25px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	height: 200px;
 }
 /*//max width 576
 //min width 577 max width 768
