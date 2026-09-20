@@ -56,9 +56,9 @@ a:hover {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
 	min-height: 64px;
 	background-color: chocolate;
-	border-radius: 0px 0px 15px 15px;
 	box-shadow: rgba(0, 0, 0, 1) 0px 3px 8px;
 }
 .elemento {
@@ -67,7 +67,7 @@ a:hover {
 	justify-content: center;
 	align-items: center;
 	font-size: 25px;
-	height: 64px;
+	min-height: 64px;
 	font-weight: bold;
 	background-color: chocolate;
 	transition: all 1s ease;
@@ -81,9 +81,9 @@ a:hover {
 }
 @media (max-width: 576px){
 	.contenedor {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 	.articulo {
 		display: flex;
@@ -98,9 +98,7 @@ a:hover {
 	.elemento {	
 		padding-left: 10px;
 		padding-right: 10px;
-	}
-	.card {
-		width: 150px;
+		font-size: 20px;
 	}
 	
 }
@@ -123,26 +121,14 @@ a:hover {
 	}
 }
 @media (max-width: 321px){
-	.elemento{
-		font-size: 20px;
+	.elemento {
+		font-size: 15px;
+        padding: 0px;
 	}
 }
 .imagen {
 	width: 200px;
 	height: 200px;
-}
-.footer {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	padding: 10px 20px;               
-  	background-color: #d35400;
-  	background-image: url("img/logo_tienda.png"); 
-  	background-repeat: repeat-x;      
-  	background-size: 60px auto;       
-  	background-position: center top;  
-  	text-align: center;
 }
 .carrito {
 	display: flex;
@@ -150,6 +136,14 @@ a:hover {
 	flex-direction: row;
 	flex-grow: 1;
 	justify-content: center;
+	min-height: 64px;
+	font-size: 30px;
+	transition: all 1s ease;
+	background-color: chocolate;
+}
+.carrito:hover {
+	transition: all 1s ease;
+	background-color: #eb2525;
 }
 article.portada {
 	width: 90%;
