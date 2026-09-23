@@ -1,25 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-		<title>StoreGo | Contacto</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StoreGo | Contacto</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<nav class="menu">
-		<a href="index.html" class="elemento">Inicio</a>
-		<a href="productos.html" class="elemento">Productos</a>
-		<a href="contacto.html" class="elemento">Contacto</a>
-		<a href="carrito.html" class="carrito">🛒</a>
-	</nav>
-	<div class="contenedor">
-		<article class="portada">
 
-		</article>
-	</div>
-	<footer class="pie">
-		<p>© 2026 StoreGo. Proyecto educativo.</p>
-	</footer>
+<header class="site-header">
+  <div class="scan-line"></div>
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><span>Store</span>Go</a>
+    <nav class="nav" id="mainNav">
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <a href="carrito.html" class="icon-btn" aria-label="Carrito">
+        <img src="img/carrito_vacio.png" alt="Carrito" class="cart-icon-img" id="cartIcon">
+        <span class="cart-count" id="cartCount">0</span>
+      </a>
+      <button class="icon-btn" id="menuToggle" aria-label="Abrir menú">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="container hero-inner">
+    <span class="eyebrow">CONTACTO</span>
+    <h1>¿Tienes una <span class="grad-text">pregunta</span>?</h1>
+    <p class="hero-copy">Escríbenos y te respondemos a la brevedad.</p>
+  </div>
+</section>
+
+<section class="products">
+  <div class="container">
+    <form class="contact-form" id="contactForm">
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" id="contactEmail" placeholder="Correo" required>
+      <textarea placeholder="Mensaje" rows="5" required></textarea>
+      <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><span>Store</span>Go</div>
+        <p>Tu tienda de consolas y videojuegos de confianza.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Tienda</h4>
+        <a href="productos.html">Productos</a>
+        <a href="carrito.html">Carrito</a>
+      </div>
+      <div class="footer-col">
+        <h4>Soporte</h4>
+        <a href="contacto.html">Contacto</a>
+        <a href="#">Preguntas frecuentes</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 StoreGo. Derechos reservados a HakyoCorps y Archiweb</div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
 </body>
 </html>

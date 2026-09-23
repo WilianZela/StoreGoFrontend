@@ -1,25 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<title>StoreGo | Inicio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StoreGo | Inicio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<nav class="menu">
-		<a href="index.html" class="elemento">Inicio</a>
-		<a href="productos.html" class="elemento">Productos</a>
-		<a href="contacto.html" class="elemento">Contacto</a>
-		<a href="carrito.html" class="carrito">🛒</a>
-	</nav>
-	<div class="contenedor">
-		<article class="portada">
 
-		</article>
-	</div>
-	<footer class="pie">
-		<p>© 2026 StoreGo. Proyecto educativo.</p>
-	</footer>
+<header class="site-header">
+  <div class="scan-line"></div>
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><span>Store</span>Go</a>
+    <nav class="nav" id="mainNav">
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <a href="carrito.html" class="icon-btn" aria-label="Carrito">
+        <img src="img/carrito_vacio.png" alt="Carrito" class="cart-icon-img" id="cartIcon">
+        <span class="cart-count" id="cartCount">0</span>
+      </a>
+      <button class="icon-btn" id="menuToggle" aria-label="Abrir menú">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="container hero-inner">
+    <span class="eyebrow">CONSOLAS Y VIDEOJUEGOS</span>
+    <h1>Encuentra tu próxima <span class="grad-text">consola</span></h1>
+    <p class="hero-copy">La mejor tienda pa comprar :DDD</p>
+    <div class="hero-actions">
+      <a href="productos.html" class="btn btn-primary">Ver productos</a>
+      <a href="contacto.html" class="btn btn-ghost">Contáctanos</a>
+    </div>
+  </div>
+</section>
+
+<section class="categories">
+  <div class="container">
+    <h2 class="section-title">Categorías</h2>
+    <div class="cat-grid">
+      <div class="cat-card">
+        <span class="cat-icon">🎮</span>
+        <h3>Consolas</h3>
+      </div>
+      <div class="cat-card">
+        <span class="cat-icon">🕹️</span>
+        <h3>Controles</h3>
+      </div>
+      <div class="cat-card">
+        <span class="cat-icon">💽</span>
+        <h3>Videojuegos</h3>
+      </div>
+      <div class="cat-card">
+        <span class="cat-icon">🏷️</span>
+        <h3>Ofertas</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="products">
+  <div class="container">
+    <h2 class="section-title">Destacados</h2>
+    <div class="product-grid" id="featuredGrid"></div>
+  </div>
+</section>
+
+<section class="newsletter">
+  <div class="container newsletter-inner">
+    <div>
+      <h2>No te pierdas las ofertas</h2>
+      <p>Suscríbete y recibe descuentos exclusivos.</p>
+    </div>
+    <form class="newsletter-form" id="newsletterForm">
+      <input type="email" id="newsletterEmail" placeholder="tu@correo.com" required>
+      <button type="submit" class="btn btn-primary">Suscribirme</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><span>Store</span>Go</div>
+        <p>Tu tienda de consolas y videojuegos de confianza.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Tienda</h4>
+        <a href="productos.html">Productos</a>
+        <a href="carrito.html">Carrito</a>
+      </div>
+      <div class="footer-col">
+        <h4>Soporte</h4>
+        <a href="contacto.html">Contacto</a>
+        <a href="#">Preguntas frecuentes</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 StoreGo. Derechos reservados a HakyoCorps y Archiweb</div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
 </body>
 </html>
