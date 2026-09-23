@@ -21,6 +21,9 @@ body {
 	border-radius: 5px;
 	box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 8px;
 }
+.car {
+	width: 300px;
+}
 .card h2 {
 	color: #2563EB;
 }
