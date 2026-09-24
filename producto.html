@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StoreGo | Producto</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="scan-line"></div>
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><span>Store</span>Go</a>
+    <nav class="nav" id="mainNav">
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <a href="carrito.html" class="icon-btn" aria-label="Carrito">
+        <img src="img/carrito_vacio.png" alt="Carrito" class="cart-icon-img" id="cartIcon">
+        <span class="cart-count" id="cartCount">0</span>
+      </a>
+      <button class="icon-btn" id="menuToggle" aria-label="Abrir menú">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="products">
+  <div class="container">
+    <p class="breadcrumb"><a href="index.html">Inicio</a> › <a href="productos.html">Productos</a> › <span id="crumbName"></span></p>
+    <div class="detail-layout" id="productDetail"></div>
+    <h2 class="related-title">Productos relacionados</h2>
+    <div class="product-grid" id="relatedGrid"></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><span>Store</span>Go</div>
+        <p>Tu tienda de consolas y videojuegos de confianza.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Tienda</h4>
+        <a href="productos.html">Productos</a>
+        <a href="carrito.html">Carrito</a>
+      </div>
+      <div class="footer-col">
+        <h4>Soporte</h4>
+        <a href="contacto.html">Contacto</a>
+        <a href="#">Preguntas frecuentes</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 StoreGo. Derechos reservados a HakyoCorps y Archiweb</div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

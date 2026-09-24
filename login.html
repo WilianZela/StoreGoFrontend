@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StoreGo | Iniciar sesión</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="scan-line"></div>
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><span>Store</span>Go</a>
+    <nav class="nav" id="mainNav">
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <a href="carrito.html" class="icon-btn" aria-label="Carrito">
+        <img src="img/carrito_vacio.png" alt="Carrito" class="cart-icon-img" id="cartIcon">
+        <span class="cart-count" id="cartCount">0</span>
+      </a>
+      <button class="icon-btn" id="menuToggle" aria-label="Abrir menú">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="auth-section">
+  <div class="container">
+    <form class="auth-card" id="loginForm" novalidate>
+      <div class="auth-brand">
+        <img src="img/logo_tienda_transparent.png" alt="Logo StoreGo" class="auth-logo">
+        <h1>Iniciar sesión</h1>
+        <p class="auth-sub">Ingresa con tu correo y contraseña.</p>
+      </div>
+      <div class="form-grid">
+      <div class="form-field full">
+        <label for="email">Correo</label>
+        <input type="email" id="email" name="email" placeholder="correo@duoc.cl" autocomplete="email">
+        <small class="field-hint">Solo @duoc.cl, @profesor.duoc.cl o @gmail.com</small>
+        <small class="field-error" id="email-error"></small>
+      </div>
+      <div class="form-field full">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" autocomplete="current-password">
+        <small class="field-hint">Entre 4 y 10 caracteres</small>
+        <small class="field-error" id="password-error"></small>
+      </div>
+      </div>
+      <div class="auth-actions">
+        <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+      </div>
+      <p class="auth-alt">¿No tienes cuenta? <a href="registro.html">Regístrate</a></p>
+      <p class="demo-note">Cuentas de prueba: administrador <strong>admin@duoc.cl</strong> / <strong>admin123</strong> · vendedor <strong>vendedor@duoc.cl</strong> / <strong>vend123</strong></p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><span>Store</span>Go</div>
+        <p>Tu tienda de consolas y videojuegos de confianza.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Tienda</h4>
+        <a href="productos.html">Productos</a>
+        <a href="carrito.html">Carrito</a>
+      </div>
+      <div class="footer-col">
+        <h4>Soporte</h4>
+        <a href="contacto.html">Contacto</a>
+        <a href="#">Preguntas frecuentes</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 StoreGo. Derechos reservados a HakyoCorps y Archiweb</div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
