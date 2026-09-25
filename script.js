@@ -203,7 +203,7 @@ const DEFAULT_USERS = [
   { nombre: 'Vendedor', apellidos: 'StoreGo', email: 'vendedor@duoc.cl', password: 'vend123', rol: 'vendedor' }
 ];
 
-// Arreglo de regiones y comunas (reemplazar por el arreglo complementario del entregable).
+// Arreglo de regiones y comunas.
 const REGIONES = [
   { nombre: 'Región Metropolitana de Santiago', comunas: ['Santiago', 'Maipú', 'Puente Alto', 'La Florida', 'Ñuñoa'] },
   { nombre: 'Región de la Araucanía', comunas: ['Temuco', 'Padre Las Casas', 'Villarrica', 'Pucón', 'Lautaro'] },
@@ -263,7 +263,7 @@ function setupAuthNav() {
   out.addEventListener('click', e => { e.preventDefault(); logout(); });
 }
 
-// Protege las páginas del administrador según el rol (solo visual: sin backend no es seguridad real).
+// Protege las páginas del administrador según el rol.
 function guardPage() {
   const allowed = document.body.dataset.requireRole;
   if (!allowed) return;
